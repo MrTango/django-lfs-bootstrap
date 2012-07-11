@@ -1,4 +1,6 @@
 lfs.db
+lfs.log
+local_settings.py
 .installed.cfg
 *.pyc
 *.pyo
