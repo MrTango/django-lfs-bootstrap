@@ -1,4 +1,0 @@
-Django-LFS bootstrap
-====================
-
-
