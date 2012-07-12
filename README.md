@@ -67,5 +67,5 @@ or
 	$ ./manage.py runserver 127.0.0.1:8080
 
 
-Of course, you can use any WSGI server to run your shop now. 
+Of course, you can use any WSGI server like [Gunicorn](http://gunicorn.org/), [uWSGI](http://projects.unbit.it/uwsgi) or [Chaussette](http://chaussette.readthedocs.org/) to run your shop now. 
 
