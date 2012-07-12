@@ -8,6 +8,11 @@ Clone django-lfs-bootstrap
 
 $ git clone https://github.com/MrTango/django-lfs-bootstrap.git shop
 
+Create virtualenv
+-----------------
+
+Its recommended to use virtalenv to avoid conflicts. If you don't know virtualenv please read this: http://pypi.python.org/pypi/virtualenv/.
+
 Install django and django-lfs
 -----------------------------
 
