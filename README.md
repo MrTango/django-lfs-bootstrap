@@ -101,7 +101,7 @@ Then you can start your shop:
 
 	$ uwsgi --ini uwsgi.ini
 
-And to stop uwsgi:
+And to stop uWSGI:
 
 	$ uwsgi --stop uwsgi.pid
 
