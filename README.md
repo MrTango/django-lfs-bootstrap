@@ -66,8 +66,43 @@ or
 
 	$ ./manage.py runserver 127.0.0.1:8080
 
+Using other WSGI servers
+------------------------
 
 Of course, you can use any WSGI server like [Gunicorn](http://gunicorn.org/), [uWSGI](http://projects.unbit.it/uwsgi) or [Chaussette](http://chaussette.readthedocs.org/) to run your shop now. 
 
+### uWSGI example
 
+You can just install and run your shop with uWSGI like so:
 
+	$ pip install uwsgi
+
+Then create an ini-file uwsgi.ini for example:
+
+	[uwsgi]
+	uid = lfs
+	gid = lfs
+	master = true
+	processes = 4
+	threads = 1
+	# set the http port
+	http = :8001
+	# change to django project directory
+	chdir = /home/lfs/shop/lfs_project
+	pythonpath = /home/lfs/shop
+	virtualenv = /home/lfs/.virtualenvs/venv1/
+	env = DJANGO_SETTINGS_MODULE=lfs_project.settings
+	# load django
+	module = django.core.handlers.wsgi:WSGIHandler()
+	daemonize = /home/lfs/shop/uwsgi.log
+	pidfile2 = /home/lfs/shop/uwsgi.pid	
+
+Then you can start your shop:
+
+	$ uwsgi --ini uwsgi.ini
+
+And to stop uwsgi:
+
+	$ uwsgi --stop uwsgi.pid
+
+Have fun ;)
