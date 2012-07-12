@@ -8,6 +8,19 @@ Clone django-lfs-bootstrap
 
 $ git clone https://github.com/MrTango/django-lfs-bootstrap.git shop
 
+The you have the following structure:
+
+./shop
+├── lfs_project
+│   ├── __init__.py
+│   ├── local_settings.py_tmpl
+│   ├── manage.py
+│   ├── settings.py
+│   └── urls.py
+├── README.md
+└── requirements.txt
+
+
 Create virtualenv
 -----------------
 
