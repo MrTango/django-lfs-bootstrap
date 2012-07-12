@@ -42,8 +42,8 @@ As a starting point you can just copy the local_settings.py_tmpl
 Then define your database and language aso in local_settings.py or settings.py
 You can override every from settings.py in you local_settings.py
 
-Sync th database
-----------------
+Sync the database
+-----------------
 
 	$ ./manage.py syncdb
 
@@ -68,4 +68,6 @@ or
 
 
 Of course, you can use any WSGI server like [Gunicorn](http://gunicorn.org/), [uWSGI](http://projects.unbit.it/uwsgi) or [Chaussette](http://chaussette.readthedocs.org/) to run your shop now. 
+
+
 

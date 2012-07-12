@@ -5,11 +5,15 @@ import os
 
 DIRNAME = os.path.dirname(__file__)
 
-DEFAULT_FROM_EMAIL = 'your_email@domain.com'
+DEBUG = True
+TEMPLATE_DEBUG = DEBUG
+TESTING = False
 
 ADMINS = (
     # ('Your Name', 'your_email@domain.com'),
 )
+
+MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
@@ -22,11 +26,20 @@ DATABASES = {
     }
 }
 
+# Make this unique, and don't share it with anybody!
+SECRET_KEY = '+0zsw5n@v7*rhl6r6ufqhoc6jlqq0f-u8c+gh(hjb+_jmg@rh6'
 
 TIME_ZONE = 'America/Chicago'
 LANGUAGE_CODE = 'en'
 
+DEFAULT_FROM_EMAIL = 'your_email@domain.com'
 
 EMAIL_HOST = "localhost"
 EMAIL_HOST_USER = ""
 EMAIL_HOST_PASSWORD = ""
+
+TEMPLATE_DIRS = (
+    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+    # Always use forward slashes, even on Windows.
+    # Don't forget to use absolute paths, not relative paths.
+)
